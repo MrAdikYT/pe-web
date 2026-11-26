@@ -8,4 +8,6 @@ Statický web k zápočtové písemce z předmětu Podniková ekonomika (VŠB-TU
 - **Cvičná písemka** (`lessons/0007-cvicna-pisemka.html`): 6 příkladů × 5 bodů, pokaždé jiná.
 - **Tahák** (`reference/vzorce.html`): všechny vzorce na jednom místě.
 
+**Web:** https://mradikyt.github.io/pe-web/
+
 Začni na `index.html`. Web je čisté HTML, CSS a JavaScript bez sestavování, takže běží přímo na GitHub Pages.
