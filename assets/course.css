@@ -64,4 +64,4 @@ table.mini td:nth-child(even){text-align:right;font-family:var(--mono)}
 .topics li{border:1px solid var(--line);border-radius:8px;padding:10px 14px;background:var(--card)}
 .topics li span{display:block;font-size:.9rem;color:var(--muted)}
 .topics a{font-weight:600}
-.formula{font-family:var(--mono);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:8px 12px;margin:8px 0;overflow-x:auto;line-height:1.7}
+.formula{font-family:var(--mono);font-size:.82rem;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:8px 12px;margin:8px 0;overflow-x:auto;line-height:1.55}
