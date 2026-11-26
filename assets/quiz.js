@@ -22,7 +22,7 @@
   const st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
 
   function mount(id, items, opt){
-    const root=document.getElementById(id); if(!root) return;
+    const root=document.getElementById(id); if(!root) return; root.classList.add('quiz');
     let got=0, done=0;
     function render(){
       root.innerHTML=''; got=0; done=0;
