@@ -64,4 +64,11 @@ table.mini td:nth-child(even){text-align:right;font-family:var(--mono)}
 .topics li{border:1px solid var(--line);border-radius:8px;padding:10px 14px;background:var(--card)}
 .topics li span{display:block;font-size:.9rem;color:var(--muted)}
 .topics a{font-weight:600}
-.formula{font-family:var(--mono);font-size:.82rem;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:8px 12px;margin:8px 0;overflow-x:auto;line-height:1.55}
+.formula{font-family:var(--mono);font-size:.9rem;white-space:nowrap;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:8px 12px;margin:8px 0;overflow-x:auto;line-height:1.55}
+table.vzz{border-collapse:collapse;width:100%;margin:10px 0}
+table.vzz td{border:0;border-bottom:1px solid var(--line);padding:6px 8px;vertical-align:top}
+table.vzz td:first-child{font-family:var(--mono);width:1.5em;text-align:center;color:var(--accent)}
+table.vzz td:nth-child(2){font-weight:600;white-space:nowrap}
+table.vzz td:nth-child(3){font-size:.88rem;color:var(--muted)}
+table.vzz tr.sum td{background:var(--card)}
+table.vzz tr.sum td:nth-child(2){color:var(--accent)}
