@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bod zvratu a rentabilita</title>
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../index.html">← Rozcestník</a> · <a href="0003-naklady.html">← Lekce 3: náklady</a> · <a href="0005-kapacity.html">Lekce 5: kapacity →</a> · <a href="../reference/vzorce.html">Tahák</a></nav>
+
+<header class="lesson">
+<div class="kicker">PE · zápočtová písemka · lekce 4</div>
+<h1>Bod zvratu a rentabilita</h1>
+<p class="lede">Po lekci spočítáš bod zvratu v kusech i korunách, objem pro požadovaný zisk, limity fixních a variabilních nákladů a ceny, kritické využití kapacity, rentabilitu nákladů a nevyužité fixní náklady. Látka 5.–7. cvičení, v písemce se objevuje nejčastěji.</p>
+</header>
+
+<h2>1. Jedna rovnice na všechno</h2>
+<div class="formula">Z = T − CN = p·q − (FN + vn·q) = (p − vn)·q − FN</div>
+<p><span class="f">p − vn</span> je <b>marže</b> (příspěvek na úhradu z jednoho kusu). Každý kus nejdřív splácí fixní náklady, teprve potom tvoří zisk. Skoro každý příklad je tahle rovnice, ve které hledáš jinou neznámou.</p>
+
+<table>
+<tr><th>hledám</th><th>vzorec</th></tr>
+<tr><td>bod zvratu (ks), Z = 0</td><td class="f">BZ = FN / (p − vn)</td></tr>
+<tr><td>bod zvratu v tržbách (Kč)</td><td class="f">BZ·p   nebo   FN / (1 − vn/p)</td></tr>
+<tr><td>objem pro zisk Z</td><td class="f">q = (FN + Z) / (p − vn)</td></tr>
+<tr><td>limit fixních nákladů</td><td class="f">FN = (p − vn)·q − Z</td></tr>
+<tr><td>limit variabilních nákladů</td><td class="f">vn = p − (FN + Z) / q</td></tr>
+<tr><td>minimální cena</td><td class="f">p = vn + (FN + Z) / q</td></tr>
+<tr><td>kritické využití kapacity</td><td class="f">V<sub>krit</sub> = BZ / kapacita · 100 %</td></tr>
+<tr><td>bezpečnostní marže (koef. jistoty)</td><td class="f">MS = (q − BZ) / q</td></tr>
+<tr><td>příspěvek na úhradu (celkem)</td><td class="f">PÚ = T − VN = FN + Z</td></tr>
+<tr><td>doba dosažení BZ</td><td class="f">BZ / (roční objem / 12) měsíců</td></tr>
+</table>
+
+<div class="box rule">
+<p><b>Příklad ze cvičení:</b> tkanina, p = 37 Kč/m, vn = 26,50 Kč/m, FN = 8 580 000 Kč. BZ = 8 580 000 / 10,50 = <b>817 143 m</b>. Při prodeji 2 mil. m: Z = 10,50 · 2 000 000 − 8 580 000 = <b>12 420 000 Kč</b>. Měsíčně se prodá 166 667 m, bodu zvratu se dosáhne za 817 143 / 166 667 ≈ <b>5 měsíců</b>.</p>
+</div>
+<div class="box trap">
+<p><b>Zaokrouhlení:</b> bod zvratu v kusech se v praxi zaokrouhluje <b>nahoru</b> (3 817,43 → 3 818 ks), protože při 3 817 ks je ještě ztráta. Když je BZ vyšší než kapacita, výroba se nevyplatí.</p>
+</div>
+
+<h2>2. Různorodá produkce</h2>
+<p>Když podnik vyrábí více druhů, objem se měří v Kč. Variabilní náklady jsou podíl z tržeb <span class="f">vn/T</span> (kolik z 1 Kč tržeb padne na VN):</p>
+<div class="formula">BZ (Kč) = FN / (1 − VN/T)</div>
+
+<h2>3. Rentabilita a nákladovost</h2>
+<div class="formula">rentabilita nákladů r = Z / CN    rentabilita tržeb = Z / T<br>
+rentabilita VK = Z / VK    rentabilita celkového kapitálu = Z / celkový kapitál<br>
+nákladovost n = CN / výnosy (výkony v Kč)</div>
+<p>Když je dána požadovaná rentabilita nákladů r: <span class="f">T = CN·(1 + r)</span>, takže <span class="f">FN = p·q / (1 + r) − vn·q</span>. Při zisku jako procentu tržeb z: <span class="f">p·q·(1 − z) = FN + vn·q</span>.</p>
+
+<h2>4. Nevyužité a uspořené fixní náklady</h2>
+<div class="formula">k = q<sub>skutečné</sub> / q<sub>plánované</sub><br>nevyužité FN = FN · (1 − k)  (vyrábím méně)<br>uspořené FN = FN · (k − 1)  (vyrábím více)</div>
+<p>Příklad: FN 235 800 Kč, místo 300 000 ks jen 270 000 ks → k = 0,9 → nevyužité FN = <b>23 580 Kč</b>.</p>
+
+<h2>5. Kvíz</h2>
+<div id="q1"></div>
+
+<h2>6. Procvičování</h2>
+<h3>Bod zvratu a kritické využití</h3>
+<div id="d1"></div>
+<h3>Objem pro zisk a výsledek hospodaření</h3>
+<div id="d2"></div>
+<h3>Limity FN, vn a ceny</h3>
+<div id="d3"></div>
+<h3>Cena z kritického využití kapacity</h3>
+<div id="d4"></div>
+<h3>Rentabilita nákladů</h3>
+<div id="d5"></div>
+<h3>Nevyužité FN a nákladovost</h3>
+<div id="d6"></div>
+<h3>Různorodá produkce a bezpečnostní marže</h3>
+<div id="d7"></div>
+
+<p class="side"><b>Zdroj:</b> materiály k 5.–6. cvičení v LMS (Náklady a BZ, příklady 1–15, a řešené příklady ze 6. cvičení). Shrnutí analýzy bodu zvratu i v učebnici Martinovičová a kol., <i>Úvod do podnikové ekonomiky</i>, Grada 2019 (doporučená literatura předmětu).</p>
+</main>
+
+<script src="../assets/quiz.js"></script>
+<script src="../assets/drill.js"></script>
+<script src="../assets/gen.js"></script>
+<script>
+Quiz.mount("q1",[
+ {q:"V bodě zvratu platí:",a:["tržby se rovnají celkovým nákladům","tržby se rovnají fixním nákladům","marže se rovná variabilním nákladům"],ok:0,why:"Z = T − CN = 0."},
+ {q:"Když stoupnou fixní náklady, bod zvratu:",a:["klesne","se posune výš","se nezmění"],ok:1,why:"BZ = FN / (p − vn), FN je v čitateli."},
+ {q:"Bod zvratu 3 246 ks, kapacita 3 200 ks. Výroba:",a:["je mírně zisková","je přesně na nule","je vždy ztrátová"],ok:2,why:"Ani plná kapacita nepokryje náklady."},
+ {q:"Kritické využití kapacity se počítá jako:",a:["kapacita / BZ","BZ / kapacita","(kapacita − BZ) / BZ"],ok:1,why:"Jakou část kapacity musím využít, abych pokryl náklady."},
+ {q:"Rentabilita nákladů je:",a:["zisk / celkové náklady","zisk / celkové tržby","náklady / celkové tržby"],ok:0,why:"Zisk na 1 Kč nákladů. Náklady / výnosy je nákladovost."},
+ {q:"Podnik vyrábí 90 % plánu, FN 100 000 Kč. Nevyužité FN:",a:["90 000 Kč","10 000 Kč","11 111 Kč"],ok:1,why:"FN·(1 − k) = 100 000·0,1."}
+]);
+Drill.mount("d1",PEGen.bzZaklad);
+Drill.mount("d2",PEGen.bzZisk);
+Drill.mount("d3",PEGen.bzLimity);
+Drill.mount("d4",PEGen.bzCenaZKrit);
+Drill.mount("d5",PEGen.bzRentabilita);
+Drill.mount("d6",PEGen.nevyuziteFN);
+Drill.mount("d7",PEGen.bzRuznorodaMS);
+</script>
+</body>
+</html>

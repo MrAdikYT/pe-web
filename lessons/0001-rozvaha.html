@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rozvaha: majetek a kapitál</title>
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../index.html">← Rozcestník</a> · <a href="0002-vykaz-zisku-a-ztraty.html">Lekce 2: VZZ →</a> · <a href="../reference/vzorce.html">Tahák se vzorci</a></nav>
+
+<header class="lesson">
+<div class="kicker">PE · zápočtová písemka · lekce 1</div>
+<h1>Rozvaha: majetek a kapitál</h1>
+<p class="lede">Po lekci zařadíš položku do správné skupiny, sestavíš rozvahu ze soupisu, dopočítáš chybějící položku a zaúčtuješ hospodářské operace až ke konečné rozvaze. To jsou příklady ze 3. a 4. cvičení.</p>
+</header>
+
+<h2>1. Jedna věc, dva pohledy</h2>
+<p>Majetek podniku ukazuje, <b>co podnik má</b> (aktiva). Kapitál ukazuje, <b>z čeho to zaplatil a komu to patří</b> (pasiva). Je to tentýž majetek, jen popsaný dvakrát, proto platí</p>
+<div class="formula">Σ Aktiva = Σ Pasiva   (bilanční pravidlo)</div>
+<p>Rozvaha je <b>stav k jednomu dni</b> (bilanční den). Počáteční rozvaha se sestavuje při založení podniku, konečná na konci účetního období.</p>
+
+<table>
+<tr><th>AKTIVA (majetek)</th><th>PASIVA (zdroje krytí)</th></tr>
+<tr><td><b>A. Stálá aktiva</b> (déle než 1 rok)<br>DNM: software, licence, patenty, goodwill<br>DHM: budovy, stroje, pozemky, auta<br>DFM: podíly, dlouhodobé cenné papíry</td>
+<td><b>Vlastní kapitál</b><br>základní kapitál, ážio a kapitálové fondy, fondy ze zisku, VH minulých let, VH běžného období</td></tr>
+<tr><td><b>B. Oběžná aktiva</b> (krátkodobá)<br>zásoby (materiál, nedokončená výroba, výrobky, zboží), pohledávky, krátkodobý finanční majetek, peníze v pokladně a na účtu</td>
+<td><b>Cizí zdroje</b><br>rezervy, dlouhodobé závazky (úvěry, dluhopisy), krátkodobé závazky (dodavatelé, mzdy, daně, krátkodobé úvěry)</td></tr>
+<tr><td>Časové rozlišení aktiv</td><td>Časové rozlišení pasiv</td></tr>
+</table>
+
+<div class="box rule">
+<p><b>Hranice ze cvičení:</b> dlouhodobý <b>nehmotný</b> majetek má vstupní cenu nad <b>60 000 Kč</b>, dlouhodobý <b>hmotný</b> nad <b>80 000 Kč</b>. Obojí slouží déle než 1 rok. Dražší věc s kratší životností je oběžný majetek nebo náklad.</p>
+</div>
+
+<h2>2. Brutto, korekce, netto</h2>
+<p>Stálý majetek se opotřebovává. Odpisy se sčítají do <b>oprávek</b>. V rozvaze se oprávky <b>odečítají od aktiv</b>, nejsou to pasiva:</p>
+<div class="formula">netto (zůstatková cena) = brutto (pořizovací cena) − korekce (oprávky)</div>
+<p>Příklad: DHM 12 600, oprávky 6 800 → v aktivech je DHM <b>5 800</b>.</p>
+
+<h2>3. Hospodářské operace</h2>
+<p>Každá operace mění <b>právě dvě položky</b>. Podle toho, kde jsou, se bilanční suma změní, nebo ne:</p>
+<table>
+<tr><th>operace</th><th>změna</th><th>suma</th></tr>
+<tr><td>výběr z účtu do pokladny</td><td>A +, A −</td><td>beze změny</td></tr>
+<tr><td>úhrada dodavateli z úvěru</td><td>P +, P −</td><td>beze změny</td></tr>
+<tr><td>nákup materiálu na fakturu</td><td>A +, P +</td><td>roste</td></tr>
+<tr><td>úhrada závazku z účtu, výplata mezd</td><td>A −, P −</td><td>klesá</td></tr>
+</table>
+<div class="box trap">
+<p><b>Pozor na slovní zadání:</b> „vydané faktury odběratelům“ jsou <b>pohledávky</b> (aktiva). „Přijaté faktury od dodavatelů“ a „nevyplacené mzdy“ jsou <b>závazky</b> (pasiva). „Výpis z úvěrového účtu“ je úvěr, tedy cizí kapitál. Nevyplněný základní kapitál dopočítáš z rovnosti A = P.</p>
+</div>
+
+<h2>4. Kvíz</h2>
+<div id="q1"></div>
+
+<h2>5. Procvičování (hodnoty se mění)</h2>
+<h3>Zařaď položku</h3>
+<div id="d1"></div>
+<h3>Doplň chybějící údaje</h3>
+<div id="d2"></div>
+<h3>Sestav rozvahu ze soupisu</h3>
+<div id="d3"></div>
+<h3>Brutto a netto</h3>
+<div id="d4"></div>
+<h3>Operace a konečná rozvaha</h3>
+<div id="d5"></div>
+
+<p class="side"><b>Zdroj:</b> materiály ke 3. a 4. cvičení Podnikové ekonomiky v LMS (rozvaha, příklady 1–10) a skripta Kašík, <i>Základy podnikové ekonomiky – opora ke studiu</i>, kapitola o majetkové a kapitálové struktuře. Struktura rozvahy podle <a href="https://www.zakonyprolidi.cz/cs/2002-500">vyhlášky č. 500/2002 Sb.</a></p>
+</main>
+
+<script src="../assets/quiz.js"></script>
+<script src="../assets/drill.js"></script>
+<script src="../assets/gen.js"></script>
+<script>
+Quiz.mount("q1",[
+ {q:"Rozvaha zachycuje:",a:["stav majetku a zdrojů k danému dni","náklady a výnosy za celé období","příjmy a výdaje peněz za období"],ok:0,why:"Rozvaha je stavový výkaz k bilančnímu dni. Náklady a výnosy jsou ve VZZ, peněžní toky v cash flow."},
+ {q:"Oprávky k DHM v rozvaze:",a:["patří mezi krátkodobé závazky","zvyšují hodnotu vlastního kapitálu","snižují hodnotu stálých aktiv"],ok:2,why:"Oprávky jsou korekce aktiv: netto = brutto − oprávky."},
+ {q:"Emisní ážio patří do:",a:["cizího kapitálu podniku","vlastního kapitálu podniku","oběžných aktiv podniku"],ok:1,why:"Ážio je rozdíl mezi prodejní a nominální cenou akcie, patří k vlastnímu kapitálu."},
+ {q:"Software za 50 000 Kč s životností 3 roky:",a:["není dlouhodobý nehmotný majetek","je dlouhodobý nehmotný majetek","je dlouhodobý finanční majetek"],ok:0,why:"Hranice pro DNM je vstupní cena nad 60 000 Kč."},
+ {q:"Nákup materiálu na fakturu bilanční sumu:",a:["sníží o hodnotu materiálu","nezmění, jen přesune aktiva","zvýší o hodnotu materiálu"],ok:2,why:"Materiál (A) roste a závazky k dodavatelům (P) rostou o stejnou částku."},
+ {q:"Rezervy v rozvaze patří do:",a:["cizích zdrojů","vlastního kapitálu","oběžných aktiv"],ok:0,why:"Rezervy se tvoří na vrub nákladů a kryjí budoucí výdaje, jsou součástí cizích zdrojů."}
+]);
+Drill.mount("d1",PEGen.rozvahaTrideni);
+Drill.mount("d2",PEGen.rozvahaDoplneni);
+Drill.mount("d3",PEGen.rozvahaSestaveni);
+Drill.mount("d4",PEGen.rozvahaNetto);
+Drill.mount("d5",PEGen.rozvahaOperace);
+</script>
+</body>
+</html>

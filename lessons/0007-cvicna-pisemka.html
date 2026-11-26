@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cvičná zápočtová písemka</title>
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../index.html">← Rozcestník</a> · <a href="../reference/vzorce.html">Tahák se vzorci</a></nav>
+
+<header class="lesson">
+<div class="kicker">PE · zápočtová písemka · simulace</div>
+<h1>Cvičná zápočtová písemka</h1>
+<p class="lede">Šest příkladů, z každého tématu jeden, po 5 bodech: celkem <b>30 bodů</b>, k zápočtu je potřeba <b>16</b>. Stejný rozsah jako skutečná písemka ve 12. cvičení. Každá písemka je jiná.</p>
+</header>
+
+<div class="box rule">
+<p><b>Jak na to:</b> počítej na papíře s kalkulačkou, výsledky zapisuj sem. Čísla piš bez mezer nebo s mezerami, desetinnou čárku nebo tečku. Uznává se zaokrouhlení na zhruba 0,5 %. Body za příklad se dělí podle počtu správných polí. Po vyhodnocení uvidíš postup.</p>
+<p>Nejdřív si dej 45 minut a zkus to bez taháku. Potom si projdi chyby v <a href="../reference/vzorce.html">taháku</a> a příslušné lekci.</p>
+</div>
+
+<div id="ex"></div>
+
+<p class="side"><b>Zdroj:</b> podmínky zápočtu (30 b, minimum 16 b, jen příklady z témat procvičených na cvičeních) podle dokumentu Charakteristika předmětu a podmínky ukončení v LMS. Typy příkladů podle cvičení 3–11.</p>
+</main>
+
+<script src="../assets/gen.js"></script>
+<script src="../assets/exam.js"></script>
+<script>
+const G=PEGen;
+Exam.mount("ex",[
+  [G.rozvahaOperace,G.rozvahaSestaveni,G.rozvahaDoplneni],
+  [G.vzzSestaveni,G.vzzPlan],
+  [G.naklKlas,G.dvouObdobi,G.bzZaklad],
+  [G.bzZisk,G.bzLimity,G.bzCenaZKrit,G.bzRentabilita,G.nevyuziteFN],
+  [G.qpVykon,G.qpPracnost,G.qpPlocha,G.vyuziti,G.casoveFondy,G.uzkeMisto],
+  [G.obratZasob,G.uvolneni,G.normaZasob,G.ocp,G.fifo,G.zasobovaci]
+],{per:5,pass:16});
+</script>
+</body>
+</html>

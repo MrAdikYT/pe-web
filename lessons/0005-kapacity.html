@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Výrobní kapacita</title>
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../index.html">← Rozcestník</a> · <a href="0004-bod-zvratu.html">← Lekce 4: bod zvratu</a> · <a href="0006-obezny-majetek.html">Lekce 6: oběžný majetek →</a> · <a href="../reference/vzorce.html">Tahák</a></nav>
+
+<header class="lesson">
+<div class="kicker">PE · zápočtová písemka · lekce 5</div>
+<h1>Výrobní kapacita</h1>
+<p class="lede">Po lekci spočítáš časové fondy, výrobní kapacitu třemi způsoby (výkonem, pracností, plochou), její využití k<sub>c</sub>, k<sub>e</sub>, k<sub>i</sub> a najdeš úzké místo linky. Látka 8. a 9. cvičení.</p>
+</header>
+
+<h2>1. Výrobní kapacita</h2>
+<p><b>Výrobní kapacita</b> je maximální výrobní schopnost jednotky (stroje, dílny, podniku) za období při optimálním využití výrobních podmínek. Udává se v naturálních jednotkách (ks, t), v penězích nebo v čase.</p>
+
+<h2>2. Časové fondy</h2>
+<table>
+<tr><th>fond</th><th>jak se spočítá</th><th>kdy</th></tr>
+<tr><td><b>kalendářní</b> T<sub>k</sub></td><td>dny v období × 24 h (rok 8 760 h)</td><td>nepřetržité provozy (hutě, chemie)</td></tr>
+<tr><td><b>nominální</b> T<sub>n</sub></td><td>(dny − víkendy − svátky − celozávodní dovolená) × směny × hodiny směny</td><td></td></tr>
+<tr><td><b>využitelný</b> T<sub>p</sub></td><td>T<sub>n</sub> − plánované prostoje (opravy, přestavení)</td><td>do výpočtu kapacity</td></tr>
+</table>
+<div class="formula">T<sub>p</sub> = d · h · (1 − t<sub>z</sub>/100)     T<sub>p</sub> = T<sub>k</sub> · k<sub>z</sub>,  k<sub>z</sub> = 1 − t<sub>z</sub>/100</div>
+
+<h2>3. Tři způsoby výpočtu kapacity</h2>
+<table>
+<tr><th>když znám</th><th>vzorec</th></tr>
+<tr><td>výkon za hodinu V<sub>p</sub> (linka, pec, kávovar)</td><td class="f">Q<sub>p</sub> = T<sub>p</sub> · V<sub>p</sub></td></tr>
+<tr><td>normu pracnosti t (obrábění)</td><td class="f">Q<sub>p</sub> = T<sub>p</sub> / t<sub>k</sub>,  t<sub>k</sub> = t / (k<sub>1</sub> · k<sub>2</sub>)</td></tr>
+<tr><td>plochu (montáž, formovna)</td><td class="f">Q<sub>p</sub> = (M / m) · (T<sub>p</sub> / t)</td></tr>
+</table>
+<p>k<sub>1</sub> je plnění norem (110 % → 1,1), k<sub>2</sub> koeficient progrese (zlepšení produktivity, 1 = žádné). Proto je kapacitní norma t<sub>k</sub> menší než t. M je celková plocha, m plocha na 1 výrobek, t průběžná doba výroby 1 kusu.</p>
+<div class="box rule"><p><b>Příklad:</b> t = 0,30 Nh, normy plněny na 110 %, progrese 1,05, T<sub>p</sub> = 4 200 h. t<sub>k</sub> = 0,3 / (1,1·1,05) = 0,2597 h, Q<sub>p</sub> = 4 200 / 0,2597 ≈ <b>16 170 ks</b>. Ve cvičení se t<sub>k</sub> zaokrouhlilo na 0,26 a vyšlo 16 154 ks, obojí se uznává.</p></div>
+
+<h2>4. Využití kapacity</h2>
+<div class="formula">k<sub>c</sub> = Q<sub>s</sub> / Q<sub>p</sub> = k<sub>e</sub> · k<sub>i</sub><br>
+k<sub>e</sub> = T<sub>s</sub> / T<sub>p</sub>  (časové, extenzivní)<br>
+k<sub>i</sub> = V<sub>s</sub> / V<sub>p</sub>  (výkonové, intenzivní),  V<sub>s</sub> = Q<sub>s</sub> / T<sub>s</sub><br>
+kapacitní rezerva = Q<sub>p</sub> − Q<sub>s</sub></div>
+<p><b>Extenzivní</b> využití zvýšíš více směnami a lepším využitím pracovní doby, horní hranice je T<sub>k</sub>. <b>Intenzivní</b> nižší pracností, kratšími operačními časy a vyšší kvalifikací.</p>
+
+<h2>5. Úzké místo</h2>
+<p>Když výrobek prochází několika pracovišti za sebou, linka zvládne jen tolik, kolik <b>nejslabší pracoviště</b>. Spočítej kapacitu každého pracoviště ve stejných jednotkách (pytle za měsíc) a vyber minimum. Řešení při nedostatku: další směna, nákup nebo pronájem strojů, kooperace, snížení úkolu. Při přebytku naopak méně směn, prodej nebo pronájem strojů.</p>
+
+<h2>6. Kvíz</h2>
+<div id="q1"></div>
+
+<h2>7. Procvičování</h2>
+<h3>Časové fondy</h3>
+<div id="d1"></div>
+<h3>Kapacita z výkonu</h3>
+<div id="d2"></div>
+<h3>Kapacita z pracnosti</h3>
+<div id="d3"></div>
+<h3>Kapacita z plochy</h3>
+<div id="d4"></div>
+<h3>Extenzivní, intenzivní a celkové využití</h3>
+<div id="d5"></div>
+<h3>Úzké místo linky</h3>
+<div id="d6"></div>
+
+<p class="side"><b>Zdroj:</b> materiály k 8. a 9. cvičení v LMS (Kapacity v příkladech, příklady 1–11, seznam vzorců ke cvičení 8–9) a 8. přednáška Výrobní procesy.</p>
+</main>
+
+<script src="../assets/quiz.js"></script>
+<script src="../assets/drill.js"></script>
+<script src="../assets/gen.js"></script>
+<script>
+Quiz.mount("q1",[
+ {q:"Do výpočtu kapacity se bere časový fond:",a:["kalendářní","nominální","využitelný"],ok:2,why:"Využitelný fond = nominální minus plánované prostoje."},
+ {q:"Koeficient progrese 1,05 kapacitní normu pracnosti:",a:["zvýší","sníží","nezmění"],ok:1,why:"t<sub>k</sub> = t / (k<sub>1</sub>·k<sub>2</sub>), větší jmenovatel dá menší t<sub>k</sub>."},
+ {q:"k<sub>c</sub> = 0,85 a k<sub>e</sub> = 0,93. Intenzivní využití je:",a:["0,914","0,791","1,094"],ok:0,why:"k<sub>i</sub> = k<sub>c</sub> / k<sub>e</sub> = 0,85 / 0,93."},
+ {q:"Více směn zvyšuje hlavně využití:",a:["intenzivní","extenzivní","výkonové"],ok:1,why:"Prodlužuje dobu práce, tedy časové (extenzivní) využití."},
+ {q:"Kapacita linky se třemi pracovišti je dána:",a:["součtem všech kapacit","průměrem všech kapacit","nejmenší z kapacit"],ok:2,why:"Úzké místo omezuje celou linku."}
+]);
+Drill.mount("d1",PEGen.casoveFondy);
+Drill.mount("d2",PEGen.qpVykon);
+Drill.mount("d3",PEGen.qpPracnost);
+Drill.mount("d4",PEGen.qpPlocha);
+Drill.mount("d5",PEGen.vyuziti);
+Drill.mount("d6",PEGen.uzkeMisto);
+</script>
+</body>
+</html>

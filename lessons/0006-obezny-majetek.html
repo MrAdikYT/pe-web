@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oběžný majetek</title>
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../index.html">← Rozcestník</a> · <a href="0005-kapacity.html">← Lekce 5: kapacity</a> · <a href="0007-cvicna-pisemka.html">Cvičná písemka →</a> · <a href="../reference/vzorce.html">Tahák</a></nav>
+
+<header class="lesson">
+<div class="kicker">PE · zápočtová písemka · lekce 6</div>
+<h1>Oběžný majetek</h1>
+<p class="lede">Po lekci spočítáš průměrný stav zásob, počet obrátek, dobu obratu, rychlost obratu a koeficient vázanosti, uvolněný majetek, normu zásob, obratový cyklus peněz a ocenění výdeje metodou FIFO a průměrem. Látka 10. a 11. cvičení.</p>
+</header>
+
+<h2>1. Koloběh</h2>
+<p>Oběžný majetek je v pohybu: <b>peníze → materiál → nedokončená výroba → hotové výrobky → pohledávky → peníze</b>. Čím rychleji se obrátí, tím méně peněz v něm podnik potřebuje vázat. Zásoby se dělí na provozní, sezónní, pojistné a technologické, podle velikosti na minimální, maximální a průměrnou.</p>
+
+<h2>2. Průměrný stav: chronologický průměr</h2>
+<p>Když máš stavy k několika datům (třeba na začátku každého čtvrtletí), krajní hodnoty se berou napůl:</p>
+<div class="formula">průměr = (½·OM<sub>0</sub> + OM<sub>1</sub> + … + OM<sub>n−1</sub> + ½·OM<sub>n</sub>) / (n − 1)    n = počet údajů</div>
+<p>Pět stavů (1. 1., 1. 4., 1. 7., 1. 10., 1. 1.) dělíš <b>čtyřmi</b>. Jen dva stavy (začátek a konec): obyčejný průměr.</p>
+
+<h2>3. Ukazatele obratu (rok = 360 dní)</h2>
+<table>
+<tr><th>ukazatel</th><th>vzorec</th><th>význam</th></tr>
+<tr><td>počet obrátek PO</td><td class="f">spotřeba (tržby) / průměrný stav</td><td>kolikrát se zásoba za období obrátí</td></tr>
+<tr><td>doba obratu DO</td><td class="f">360 / PO = stav·360 / spotřeba</td><td>kolik dní trvá jedna obrátka</td></tr>
+<tr><td>rychlost obratu</td><td class="f">PO / délka období</td><td>obrátek za den</td></tr>
+<tr><td>koeficient vázanosti</td><td class="f">stav / spotřeba (tržby)</td><td>Kč vázaných na 1 Kč výkonů, menší je lepší</td></tr>
+<tr><td>celková potřeba OM</td><td class="f">DO · denní výkony</td><td></td></tr>
+</table>
+<div class="box rule"><p><b>Uvolnění OM při zrychlení obratu:</b> spotřeba 10 000 000 Kč, zásoba 750 000 Kč → DO = 27 dní. Zrychlení o 3 dny: nová zásoba = 10 000 000·24/360 = 666 667 Kč, uvolní se <b>83 333 Kč</b> (= spotřeba/360 · 3).</p></div>
+
+<h2>4. Zásobovací rovnice a norma zásob</h2>
+<div class="formula">PZ + nákup = spotřeba + KZ      N = S + KZ − PZ<br>
+časová norma ČN = ½·c + p + t   (c dodávkový cyklus, p pojistná, t technická zásoba ve dnech)<br>
+norma zásob NZ = ČN · průměrná denní spotřeba   (naturální jednotky)<br>
+normativ = NZ · cena   (Kč vázané v zásobě)</div>
+<p>Příklad: c = 14, p = 3, t = 1 → ČN = 11 dní. Spotřeba 180 000 t/rok = 500 t/den → NZ = <b>5 500 t</b>.</p>
+
+<h2>5. Obratový cyklus peněz</h2>
+<div class="formula">OCP = DO<sub>zásob</sub> + DO<sub>pohledávek</sub> − DO<sub>závazků</sub><br>
+DO<sub>zásob</sub> = zásoby·360 / tržby,  DO<sub>pohl</sub> = pohledávky·360 / tržby,  DO<sub>záv</sub> = závazky·360 / tržby<br>
+kapitálová potřeba = OCP · jednodenní náklady</div>
+<p>Příklad: zásoby 4,5 mil., pohledávky 1,5 mil., tržby 27 mil. → 60 + 20 − 15 = <b>65 dní</b>. Denně 30 ks po 2 000 Kč = 60 000 Kč → potřeba <b>3,9 mil. Kč</b>.</p>
+
+<h2>6. Oceňování výdeje ze skladu</h2>
+<ul>
+<li><b>FIFO</b>: první dovnitř, první ven. Výdej se ocení cenou nejstarší dodávky, po jejím vyčerpání další.</li>
+<li><b>Vážený průměr</b>: (Σ množství·cena) / Σ množství, počítá se aspoň jednou za měsíc.</li>
+<li><b>Pevné ceny</b>: hlavně maloobchod.</li>
+<li><b>LIFO</b>: v Česku zákon nepovoluje.</li>
+</ul>
+<p>Metoda <b>ABC</b> řídí zásoby podle významu: A (5–15 % druhů, 60–80 % hodnoty spotřeby), B (15–25 % druhů, 15–25 % hodnoty), C (60–80 % druhů, 5–15 % hodnoty).</p>
+
+<h2>7. Kvíz</h2>
+<div id="q1"></div>
+
+<h2>8. Procvičování</h2>
+<h3>Průměrný stav a ukazatele obratu</h3>
+<div id="d1"></div>
+<h3>Uvolnění oběžného majetku</h3>
+<div id="d2"></div>
+<h3>Zásobovací rovnice</h3>
+<div id="d3"></div>
+<h3>Norma zásob</h3>
+<div id="d4"></div>
+<h3>Obratový cyklus peněz</h3>
+<div id="d5"></div>
+<h3>FIFO a průměrná cena</h3>
+<div id="d6"></div>
+
+<p class="side"><b>Zdroj:</b> materiály k 10. a 11. cvičení v LMS (Oběžný majetek, Řízení oběžného majetku cv. 9–10, řešené příklady 1–10).</p>
+</main>
+
+<script src="../assets/quiz.js"></script>
+<script src="../assets/drill.js"></script>
+<script src="../assets/gen.js"></script>
+<script>
+Quiz.mount("q1",[
+ {q:"Počet obrátek 4 za rok (360 dní). Doba obratu je:",a:["90 dní","40 dní","4 dny"],ok:0,why:"DO = 360 / PO."},
+ {q:"Zrychlení obratu zásob znamená, že:",a:["víc peněz se váže v zásobách","část peněz se ze zásob uvolní","roste koeficient vázanosti"],ok:1,why:"Stejnou spotřebu zajistí menší zásoba."},
+ {q:"Obratový cyklus peněz se počítá:",a:["DO zásob + DO pohl. + DO záv.","DO zásob − DO pohl. + DO záv.","DO zásob + DO pohl. − DO záv."],ok:2,why:"Odklad plateb dodavatelům cyklus zkracuje."},
+ {q:"Časová norma zásob je:",a:["c + ½·p + t","½·c + p + t","½·(c + p + t)"],ok:1,why:"Polovina dodávkového cyklu plus pojistná a technická zásoba."},
+ {q:"Metodu LIFO v Česku:",a:["zákon nepovoluje","zákon přikazuje","používá maloobchod"],ok:0,why:"Povolené jsou FIFO, vážený průměr a pevné ceny."}
+]);
+Drill.mount("d1",PEGen.obratZasob);
+Drill.mount("d2",PEGen.uvolneni);
+Drill.mount("d3",PEGen.zasobovaci);
+Drill.mount("d4",PEGen.normaZasob);
+Drill.mount("d5",PEGen.ocp);
+Drill.mount("d6",PEGen.fifo);
+</script>
+</body>
+</html>

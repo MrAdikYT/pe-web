@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tahák: vzorce k zápočtu</title>
+<link rel="stylesheet" href="../assets/course.css">
+<style>
+td:first-child{white-space:nowrap}
+@media print{nav.crumbs{display:none}h2{break-after:avoid}table{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<nav class="crumbs"><a href="../index.html">← Rozcestník</a> · <a href="../lessons/0007-cvicna-pisemka.html">Cvičná písemka</a></nav>
+<header class="lesson">
+<div class="kicker">PE · tahák</div>
+<h1>Vzorce k zápočtové písemce</h1>
+<p class="lede">Všechno, co se počítá na cvičeních 3–11, na jednom místě. Vytiskne se na pár stran.</p>
+</header>
+
+<h2>Rozvaha <a href="../lessons/0001-rozvaha.html" class="side">(lekce 1)</a></h2>
+<table>
+<tr><td>bilanční pravidlo</td><td class="fb">Σ Aktiva = Σ Pasiva</td></tr>
+<tr><td>aktiva</td><td>stálá (DNM &gt; 60 000 Kč, DHM &gt; 80 000 Kč, DFM; &gt; 1 rok) + oběžná (zásoby, pohledávky, KFM, peníze)</td></tr>
+<tr><td>pasiva</td><td>vlastní kapitál (ZK, ážio, fondy ze zisku, VH min. let, VH běž. období) + cizí zdroje (rezervy, dlouhodobé a krátkodobé závazky, úvěry)</td></tr>
+<tr><td>netto</td><td class="fb">brutto − oprávky</td></tr>
+<tr><td>operace</td><td>A+A− a P+P− sumu nemění, A+P+ zvyšuje, A−P− snižuje</td></tr>
+</table>
+
+<h2>Výkaz zisku a ztráty <a href="../lessons/0002-vykaz-zisku-a-ztraty.html" class="side">(lekce 2)</a></h2>
+<table>
+<tr><td>provozní VH</td><td class="fb">provozní výnosy − provozní náklady</td></tr>
+<tr><td>finanční VH</td><td class="fb">úroky z vkladů, dividendy − nákladové úroky, poplatky</td></tr>
+<tr><td>VH před zdaněním</td><td class="fb">provozní VH + finanční VH</td></tr>
+<tr><td>čistý zisk</td><td class="fb">VH před zdaněním · (1 − sazba)   (ve cvičeních PO 19 %, FO 15 %)</td></tr>
+<tr><td>úrok (rok)</td><td class="fb">jistina · sazba</td></tr>
+<tr><td>odpis (lineární)</td><td class="fb">pořizovací cena · odpisová sazba</td></tr>
+<tr><td>cash flow (nepřímo)</td><td>zisk + odpisy − růst zásob a pohledávek + růst závazků</td></tr>
+</table>
+
+<h2>Náklady <a href="../lessons/0003-naklady.html" class="side">(lekce 3)</a></h2>
+<table>
+<tr><td>nákladová funkce</td><td class="fb">CN = FN + vn·q,   vn = VN / q</td></tr>
+<tr><td>dvě období</td><td class="fb">vn = ΔCN / Δq (min a max objem),   FN = CN − vn·q</td></tr>
+<tr><td>nejmenší čtverce</td><td class="fb">vn = (n·Σq·CN − Σq·ΣCN) / (n·Σq² − (Σq)²),   FN = (ΣCN − vn·Σq) / n</td></tr>
+</table>
+
+<h2>Bod zvratu a rentabilita <a href="../lessons/0004-bod-zvratu.html" class="side">(lekce 4)</a></h2>
+<table>
+<tr><td>zisk</td><td class="fb">Z = p·q − FN − vn·q = (p − vn)·q − FN</td></tr>
+<tr><td>bod zvratu</td><td class="fb">BZ = FN / (p − vn)   [ks],   BZ·p   [Kč]</td></tr>
+<tr><td>různorodá produkce</td><td class="fb">BZ = FN / (1 − VN/T)   [Kč]</td></tr>
+<tr><td>objem pro zisk</td><td class="fb">q = (FN + Z) / (p − vn)</td></tr>
+<tr><td>limit FN</td><td class="fb">FN = (p − vn)·q − Z</td></tr>
+<tr><td>limit vn</td><td class="fb">vn = p − (FN + Z) / q</td></tr>
+<tr><td>minimální cena</td><td class="fb">p = vn + (FN + Z) / q</td></tr>
+<tr><td>kritické využití</td><td class="fb">V<sub>krit</sub> = BZ / kapacita</td></tr>
+<tr><td>bezpečnostní marže</td><td class="fb">MS = (q − BZ) / q</td></tr>
+<tr><td>příspěvek na úhradu</td><td class="fb">PÚ = T − VN = FN + Z,   PT = (p − vn) / p</td></tr>
+<tr><td>rentabilita nákladů</td><td class="fb">r = Z / CN;   při daném r: FN = p·q/(1 + r) − vn·q</td></tr>
+<tr><td>rentabilita tržeb, VK, kapitálu</td><td class="fb">Z / T,   Z / VK,   Z / celkový kapitál</td></tr>
+<tr><td>nákladovost</td><td class="fb">n = CN / výnosy;   Q = FN / (n − vn) [Kč]</td></tr>
+<tr><td>nevyužité / uspořené FN</td><td class="fb">FN·(1 − k) / FN·(k − 1),   k = q<sub>s</sub> / q<sub>p</sub></td></tr>
+</table>
+
+<h2>Výrobní kapacita <a href="../lessons/0005-kapacity.html" class="side">(lekce 5)</a></h2>
+<table>
+<tr><td>časové fondy</td><td class="fb">T<sub>k</sub> = dny·24;  T<sub>n</sub> = prac. dny·směny·h;  T<sub>p</sub> = T<sub>n</sub>·(1 − t<sub>z</sub>/100)</td></tr>
+<tr><td>z výkonu</td><td class="fb">Q<sub>p</sub> = T<sub>p</sub>·V<sub>p</sub></td></tr>
+<tr><td>z pracnosti</td><td class="fb">Q<sub>p</sub> = T<sub>p</sub> / t<sub>k</sub>,   t<sub>k</sub> = t / (k<sub>1</sub>·k<sub>2</sub>)</td></tr>
+<tr><td>z plochy</td><td class="fb">Q<sub>p</sub> = (M / m)·(T<sub>p</sub> / t)</td></tr>
+<tr><td>využití</td><td class="fb">k<sub>c</sub> = Q<sub>s</sub>/Q<sub>p</sub> = k<sub>e</sub>·k<sub>i</sub>;  k<sub>e</sub> = T<sub>s</sub>/T<sub>p</sub>;  k<sub>i</sub> = V<sub>s</sub>/V<sub>p</sub>;  V<sub>s</sub> = Q<sub>s</sub>/T<sub>s</sub></td></tr>
+<tr><td>rezerva</td><td class="fb">Q<sub>p</sub> − Q<sub>s</sub></td></tr>
+<tr><td>úzké místo</td><td>kapacita linky = minimum kapacit pracovišť</td></tr>
+</table>
+
+<h2>Oběžný majetek <a href="../lessons/0006-obezny-majetek.html" class="side">(lekce 6)</a></h2>
+<table>
+<tr><td>chronologický průměr</td><td class="fb">(½·S<sub>0</sub> + S<sub>1</sub> + … + ½·S<sub>n</sub>) / (počet stavů − 1)</td></tr>
+<tr><td>počet obrátek</td><td class="fb">PO = spotřeba (tržby) / průměrný stav</td></tr>
+<tr><td>doba obratu</td><td class="fb">DO = 360 / PO = stav·360 / spotřeba</td></tr>
+<tr><td>rychlost obratu</td><td class="fb">PO / 360</td></tr>
+<tr><td>koef. vázanosti</td><td class="fb">stav / spotřeba</td></tr>
+<tr><td>uvolnění</td><td class="fb">spotřeba / 360 · zkrácení DO</td></tr>
+<tr><td>zásobovací rovnice</td><td class="fb">PZ + N = S + KZ</td></tr>
+<tr><td>norma zásob</td><td class="fb">ČN = ½c + p + t;  NZ = ČN·denní spotřeba;  normativ = NZ·cena</td></tr>
+<tr><td>OCP</td><td class="fb">DO<sub>zás</sub> + DO<sub>pohl</sub> − DO<sub>záv</sub>;  potřeba = OCP·denní náklady</td></tr>
+<tr><td>ocenění výdeje</td><td>FIFO (nejstarší cena první), vážený průměr, pevné ceny; LIFO zakázáno</td></tr>
+</table>
+<p class="side">Rok se ve všech příkladech kurzu počítá jako 360 dní.</p>
+</main>
+</body>
+</html>
